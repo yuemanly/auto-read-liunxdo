@@ -1,14 +1,18 @@
 [英文文档](./README_en.md)
 
 ## 注意事项
+
 1. 不能显示脚本运行日志，只有登录结果
 2. 阅读量统计有延迟，建议看点赞记录
 
 ## 彩蛋
+
 https://t.me/linuxdoSQL
 每天随机抓取帖子发布在此频道
 
 ## 使用方法一：油猴脚本(火狐不兼容,谷歌可以用)
+
+### 油猴失去焦点后会停止运行,适合前台运行
 
 油猴脚本代码在 index 开头的文件 中，建议在使用前将浏览器页面缩小，这样子可以一次滚动更多页面，读更多的回复
 油猴脚本安装地址：
@@ -17,11 +21,17 @@ https://t.me/linuxdoSQL
 2. https://greasyfork.org/en/scripts/506371-auto-like-specific-user 基于搜索到的帖子自动点赞特定用户
 3. https://greasyfork.org/zh-CN/scripts/506567-auto-like-specific-user-base-on-activity 基于用户的活动自动点赞特定用户
 
-## 使用方法二：本地运行（Windows 默认有头浏览器，Linux 默认无头浏览器）
+## 使用方法二：本地运行（Windows 默认有头浏览器(适合后台运行)，Linux 默认无头浏览器）
 
 ### 1.设置环境变量
 
 .env 里面设置用户名 密码 以及其它 env 里面指明的信息
+
+<!-- #### 新功能：话题数据抓取
+- `ENABLE_RSS_FETCH=true` - 启用RSS数据抓取功能（默认关闭）
+- `ENABLE_TOPIC_DATA_FETCH=true` - 启用话题JSON数据抓取功能（默认关闭）
+
+话题数据抓取功能会自动获取访问的话题页面的详细信息（如标题、回复数、浏览量、点赞数等）并保存到数据库中，支持PostgreSQL、MongoDB和MySQL数据库。 -->
 
 ### 2.运行
 
@@ -182,6 +192,7 @@ https://linux.do/t/topic/106471
 Timmy_0
 SINOPEC
 onePiece HelShiJiasi delph1s
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
 
 <!--
 代码：
@@ -214,6 +225,9 @@ node .\bypasscf.js
 ![alt text](image2.png)
 
 ### 3.启动 workflow
+
+
+
 
 教程：https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web?tab=readme-ov-file#enable-automatic-updates
 
